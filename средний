@@ -1,0 +1,15 @@
+class Temperature:
+    def __init__(self, celsius):
+        self.celsius = celsius
+
+    def to_fahrenheit(self):
+        return self.celsius * 9 / 5 + 32
+
+    def to_kelvin(self):
+        return self.celsius + 273.15
+
+temp = Temperature(25)
+
+print(f"Температура: {temp.celsius} °C")
+print(f"В Фаренгейтах: {temp.to_fahrenheit()} °F")
+print(f"В Кельвинах: {temp.to_kelvin()} K")
