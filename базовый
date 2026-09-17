@@ -1,0 +1,27 @@
+class Car:
+    def __init__(self, brand, model, year, speed):
+        self.brand = brand
+        self.model = model
+        self.year = year
+        self.speed = speed
+
+    def accelerate(self):
+        self.speed += 10
+        print(f"Скорость увеличена до {self.speed} км/ч")
+
+    def stop(self):
+        self.speed = 0
+        print("Машина остановилась")
+
+
+# Создание объекта
+car = Car("Toyota", "Camry", 2022, 60)
+
+print(f"Марка: {car.brand}")
+print(f"Модель: {car.model}")
+print(f"Год: {car.year}")
+print(f"Скорость: {car.speed} км/ч")
+
+# Использование методов
+car.accelerate()
+car.stop()
